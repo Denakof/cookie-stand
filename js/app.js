@@ -1,23 +1,23 @@
 'use strict';
 let workingHours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 let seattle = {
-    avg: 6.3,
+    averageCookies: 6.3,
     city: 'seattle',
-    min: 23,
-    max: 65,
+    minCustNum: 23,
+    maxCustNum: 65,
     randomNumC: [],
     sum: 0,
     cookiesperHour: [],
 
     randomCustNumber: function () {
         for (let hour = 0; hour < workingHours.length; hour++) {
-            this.randomNumC.push(Math.floor(Math.random() * (this.max - this.min + 1) + this.min));
+            this.randomNumC.push(Math.floor(Math.random() * (this.maxCustNum - this.minCustNum + 1) + this.minCustNum));
         }
     },
 
     cookiesTotal: function () {
         for (let i = 0; i < workingHours.length; i++) {
-            this.cookiesperHour.push(Math.ceil((this.randomNumC[i] * this.avg)));
+            this.cookiesperHour.push(Math.ceil((this.randomNumC[i] * this.averageCookies)));
 
             // this.cookiesperHour;
             this.sum += this.cookiesperHour[i];
@@ -48,23 +48,23 @@ seattle.render();
 
 
 let tokyo = {
-    avg: 1.2,
+    averageCookies: 1.2,
     city: 'tokyo',
-    min: 3,
-    max: 24,
+    minCustNum: 3,
+    maxCustNum: 24,
     randomNumC: [],
     sum: 0,
     cookiesperHour: [],
 
     randomCustNumber: function () {
         for (let hour = 0; hour < workingHours.length; hour++) {
-            this.randomNumC.push(Math.floor(Math.random() * (this.max - this.min + 1) + this.min));
+            this.randomNumC.push(Math.floor(Math.random() * (this.maxCustNum - this.minCustNum + 1) + this.minCustNum));
         }
     },
 
     cookiesTotal: function () {
         for (let i = 0; i < workingHours.length; i++) {
-            this.cookiesperHour.push(Math.ceil((this.randomNumC[i] * this.avg)));
+            this.cookiesperHour.push(Math.ceil((this.randomNumC[i] * this.averageCookies)));
 
             // this.cookiesperHour;
             this.sum += this.cookiesperHour[i];
@@ -94,23 +94,23 @@ tokyo.cookiesTotal();
 tokyo.render();
 
 let dubai = {
-    avg: 3.7,
+    averageCookies: 3.7,
     city: 'dubai',
-    min: 11,
-    max: 38,
+    minCustNum: 11,
+    maxCustNum: 38,
     randomNumC: [],
     sum: 0,
     cookiesperHour: [],
 
     randomCustNumber: function () {
         for (let hour = 0; hour < workingHours.length; hour++) {
-            this.randomNumC.push(Math.floor(Math.random() * (this.max - this.min + 1) + this.min));
+            this.randomNumC.push(Math.floor(Math.random() * (this.maxCustNum - this.minCustNum + 1) + this.minCustNum));
         }
     },
 
     cookiesTotal: function () {
         for (let i = 0; i < workingHours.length; i++) {
-            this.cookiesperHour.push(Math.ceil((this.randomNumC[i] * this.avg)));
+            this.cookiesperHour.push(Math.ceil((this.randomNumC[i] * this.averageCookies)));
 
             // this.cookiesperHour;
             this.sum += this.cookiesperHour[i];
@@ -140,23 +140,23 @@ dubai.cookiesTotal();
 dubai.render();
 
 let paris = {
-    avg: 2.3,
+    averageCookies: 2.3,
     city: 'paris',
-    min: 20,
-    max: 38,
+    minCustNum: 20,
+    maxCustNum: 38,
     randomNumC: [],
     sum: 0,
     cookiesperHour: [],
 
     randomCustNumber: function () {
         for (let hour = 0; hour < workingHours.length; hour++) {
-            this.randomNumC.push(Math.floor(Math.random() * (this.max - this.min + 1) + this.min));
+            this.randomNumC.push(Math.floor(Math.random() * (this.maxCustNum - this.minCustNum + 1) + this.minCustNum));
         }
     },
 
     cookiesTotal: function () {
         for (let i = 0; i < workingHours.length; i++) {
-            this.cookiesperHour.push(Math.ceil((this.randomNumC[i] * this.avg)));
+            this.cookiesperHour.push(Math.ceil((this.randomNumC[i] * this.averageCookies)));
 
             // this.cookiesperHour;
             this.sum += this.cookiesperHour[i];
@@ -186,23 +186,23 @@ paris.cookiesTotal();
 paris.render();
 
 let lima = {
-    avg: 4.6,
+    averageCookies: 4.6,
     city: 'dubai',
-    min: 2,
-    max: 16,
+    minCustNum: 2,
+    maxCustNum: 16,
     randomNumC: [],
     sum: 0,
     cookiesperHour: [],
 
     randomCustNumber: function () {
         for (let hour = 0; hour < workingHours.length; hour++) {
-            this.randomNumC.push(Math.floor(Math.random() * (this.max - this.min + 1) + this.min));
+            this.randomNumC.push(Math.floor(Math.random() * (this.maxCustNum - this.minCustNum + 1) + this.minCustNum));
         }
     },
 
     cookiesTotal: function () {
         for (let i = 0; i < workingHours.length; i++) {
-            this.cookiesperHour.push(Math.ceil((this.randomNumC[i] * this.avg)));
+            this.cookiesperHour.push(Math.ceil((this.randomNumC[i] * this.averageCookies)));
 
             // this.cookiesperHour;
             this.sum += this.cookiesperHour[i];
