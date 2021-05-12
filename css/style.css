@@ -1,9 +1,15 @@
 body{
-    color: rgb(219, 115, 188);
-    background-color: rgb(214, 218, 198);
-font-size:x-large;
+    color: rgb(240, 240, 230);
+    background-color: rgb(242, 245, 231);
+font-size:larger;
     text-align: center;
     margin-bottom: auto;
+    font-family: 'Indie Flower', cursive;
     padding: auto;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image:  url("https://st.depositphotos.com/1007358/3426/i/950/depositphotos_34260233-stock-photo-smoked-salmon-background.jpg");
+image-orientation: initial;
+backdrop-filter:blur(4px);
 }
+button{
+    color: rgb(168, 100, 23);
+    background-color: rgb(14, 12, 0);}
