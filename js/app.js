@@ -25,7 +25,7 @@ Branches.prototype.randomCustNumber = function () {
 
     }
 }
-Branches.prototype.Calc = function () {
+Branches.prototype.cookiesPerHourCalc = function () {
 
     for (let i = 0; i < 14; i++) {
         this.cookiesperHour.push(Math.ceil((this.randomNumC[i] * this.avg)));
@@ -36,7 +36,7 @@ Branches.prototype.Calc = function () {
     // console.log(this.cookiesperHour);
 
 }
-Branches.prototype.namefun = function () {
+Branches.prototype.render = function () {
     let tr3 = document.createElement('tr');
     table.appendChild(tr3);
     let td1 = document.createElement('td');
@@ -58,7 +58,7 @@ Branches.prototype.namefun = function () {
 
 
 
-function render() {
+function header() {
 
     let tr1 = document.createElement('tr');
     table.appendChild(tr1);
@@ -113,26 +113,26 @@ function renderfooter() {
 }
 
 // console.log(total[0])
-render();
+header();
 seattle.randomCustNumber();
-seattle.Calc();
-seattle.namefun();
+seattle.cookiesPerHourCalc();
+seattle.render();
 
 tokyo.randomCustNumber();
-tokyo.Calc();
-tokyo.namefun();
+tokyo.cookiesPerHourCalc();
+tokyo.render();
 
 dubai.randomCustNumber();
-dubai.Calc();
-dubai.namefun();
+dubai.cookiesPerHourCalc();
+dubai.render();
 
 paris.randomCustNumber();
-paris.Calc();
-paris.namefun();
+paris.cookiesPerHourCalc();
+paris.render();
 
 lima.randomCustNumber();
-lima.Calc();
-lima.namefun();
+lima.cookiesPerHourCalc();
+lima.render();
 
 renderfooter();
 
@@ -178,7 +178,7 @@ renderfooter();
 
 //         }
 //     },
-//     render: function () {
+//     header: function () {
 //         let container = document.getElementById('CITY');
 //         let h3Element = document.createElement('h3');
 //         container.appendChild(h3Element);
@@ -198,7 +198,7 @@ renderfooter();
 // }
 // seattle.randomCustNumber();
 // seattle.cookiesTotal();
-// seattle.render();
+// seattle.header();
 
 
 // let tokyo = {
@@ -225,7 +225,7 @@ renderfooter();
 
 //         }
 //     },
-//     render: function () {
+//     header: function () {
 //         let container = document.getElementById('CITY');
 //         let h3Element = document.createElement('h3');
 //         container.appendChild(h3Element);
@@ -245,7 +245,7 @@ renderfooter();
 // }
 // tokyo.randomCustNumber();
 // tokyo.cookiesTotal();
-// tokyo.render();
+// tokyo.header();
 
 // let dubai = {
 //     averageCookies: 3.7,
@@ -271,7 +271,7 @@ renderfooter();
 
 //         }
 //     },
-//     render: function () {
+//     header: function () {
 //         let container = document.getElementById('CITY');
 //         let h3Element = document.createElement('h3');
 //         container.appendChild(h3Element);
@@ -291,7 +291,7 @@ renderfooter();
 // }
 // dubai.randomCustNumber();
 // dubai.cookiesTotal();
-// dubai.render();
+// dubai.header();
 
 // let paris = {
 //     averageCookies: 2.3,
@@ -317,7 +317,7 @@ renderfooter();
 
 //         }
 //     },
-//     render: function () {
+//     header: function () {
 //         let container = document.getElementById('CITY');
 //         let h3Element = document.createElement('h3');
 //         container.appendChild(h3Element);
@@ -337,7 +337,7 @@ renderfooter();
 // }
 // paris.randomCustNumber();
 // paris.cookiesTotal();
-// paris.render();
+// paris.header();
 
 // let lima = {
 //     averageCookies: 4.6,
@@ -363,7 +363,7 @@ renderfooter();
 
 //         }
 //     },
-//     render: function () {
+//     header: function () {
 //         let container = document.getElementById('CITY');
 //         let h3Element = document.createElement('h3');
 //         container.appendChild(h3Element);
@@ -383,5 +383,5 @@ renderfooter();
 // }
 // lima.randomCustNumber();
 // lima.cookiesTotal();
-// lima.render();
+// lima.header();
 
