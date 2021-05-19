@@ -1,14 +1,14 @@
 body {
     color: rgb(51, 10, 90);
     background-color: rgb(236, 234, 238);
-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 font-size: larger;
+font-family: 'Lobster', cursive;
 }
 button{
     color: rgb(112, 18, 131);
 
 }
-th{
+th{ font-family: Georgia, 'Times New Roman', Times, serif;
     color: rgb(54, 9, 47);
 }
 fieldset {
@@ -19,3 +19,5 @@ fieldset {
 
 
 }
+td{ color: crimson;
+    font-family: Arial, Helvetica, sans-serif;}
