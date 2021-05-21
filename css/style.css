@@ -1,23 +1,21 @@
 body {
-    color: rgb(51, 10, 90);
     background-color: rgb(236, 234, 238);
 font-size: larger;
 font-family: 'Lobster', cursive;
+color: rgb(217, 199, 221);
 }
 button{
-    color: rgb(112, 18, 131);
+    color: rgb(108, 58, 119);
 
 }
 th{ font-family: Georgia, 'Times New Roman', Times, serif;
-    color: rgb(54, 9, 47);
+    color: rgb(114, 125, 128);
 }
 fieldset {
-    color: rgb(14, 1, 26);
-    background-color: rgb(184, 139, 181);
+    color: rgb(252, 169, 24848);
+    background-color: rgb(170, 152, 166);
     width: 110px;
     height: 220px;
-
-
 }
-td{ color: crimson;
+td{ color: rgb(104, 30, 92);
     font-family: Arial, Helvetica, sans-serif;}
